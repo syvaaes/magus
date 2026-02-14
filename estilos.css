@@ -14,10 +14,12 @@
 .titulo-pagina {
   /* Crea el cuadro inicial */ 
   padding: 20px;
-  display: inline-block; /* Para que el cuadro se ajuste al texto */
+  display: flex; /* Para que el cuadro se ajuste al texto */
   color: #ffff;
+  justify-content: center;
+
   /* Llama a la animación */
-  animation: cambioColor 4s infinite; 
+  animation: cambioColor 1s infinite; 
 }
 
 /* Define la secuencia de colores */
