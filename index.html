@@ -2,17 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página con Video</title>
   <!-- Vinculación de la hoja de estilos externa -->
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <section>
   <video autoplay muted loop id="video-fondo">
     <source src="fractal.mp4" type="video/mp4">
   </video>
   
-  <div class="contenido">
+  <div>
     <h1 class="titulo-pagina">¡Bienvenido!</h1>
   </div>
+  </section>
+
+  <section>
+    <div class="logo">
+      <img src="logo.gif">
+    </div>  
+  </section>
+  
+<div class="wave">
+  <svg viewBox="0 0 1440 120">
+    <path fill="#ffffff"
+      d="M0,96L60,85.3C120,75,240,53,360,48C480,43,600,53,720,69.3C840,85,960,107,1080,106.7C1200,107,1320,85,1380,74.7L1440,64V120H0Z">
+    </path>
+  </svg>
+</div>
+
+  <section class="contenido">
+      <section>
+        <div>
+            <h1 class="subtitulo">
+              Sociedad de Desarrollo Creativo y Analítico
+              <span class="marca">MAGUS</span>
+            </h1>
+      </div>
+      </section>
+
+      <section class="descripcion">
+        <p class="texto-descripcion">
+          La <strong>Sociedad de Desarrollo Creativo y Analítico MAGUS</strong> es un colectivo 
+          multidisciplinario integrado por <strong>matemáticos, físicos y programadores</strong> 
+          enfocados en transformar datos e ideas en soluciones tecnológicas.
+
+          Nuestro trabajo combina pensamiento analítico, creatividad y herramientas 
+          computacionales para resolver problemas complejos en distintos sectores.<br><br>
+
+          Entre nuestros miembros contamos con gente que hace <strong>análisis de datos, ciencia de datos, modelos predictivos, 
+          análisis estadístico, desarrollo web y programación</strong>, diseñando soluciones que 
+          permiten comprender mejor la información, optimizar procesos y apoyar la toma de 
+          decisiones estratégicas.
+
+          Nuestro enfoque une el rigor científico con la innovación tecnológica para desarrollar 
+          herramientas digitales, modelos analíticos y plataformas que generen valor real a 
+          partir de los datos.
+        </p>
+      </section> 
+
+      <section class="miembros">
+
+          <h2 class="titulo-miembros">Miembros de la Sociedad</h2>
+
+          <div class="contenedor-miembros">
+
+            <div class="miembro">
+              <img src="img/miembro1.jpg" alt="Miembro">
+              <h3>Nombre Apellido</h3>
+              <p>Matemático</p>
+            </div>
+
+            <div class="miembro">
+              <img src="img/miembro2.jpg" alt="Miembro">
+              <h3>Nombre Apellido</h3>
+              <p>Físico</p>
+            </div>
+
+            <div class="miembro">
+              <img src="img/miembro3.jpg" alt="Miembro">
+              <h3>Nombre Apellido</h3>
+              <p>Programador</p>
+            </div>
+
+            <div class="miembro">
+              <img src="img/miembro4.jpg" alt="Miembro">
+              <h3>Nombre Apellido</h3>
+              <p>Ciencia de Datos</p>
+            </div>
+
+          </div>
+
+      </section>
+  </section>
+
 </body>
 </html>

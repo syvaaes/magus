@@ -1,4 +1,9 @@
 /* estilos.css */
+.contenido{
+  background: white;
+  padding: 80px;
+  min-height: 100vh;
+}
 #video-fondo {
   position: fixed;
   right: 0;
@@ -10,23 +15,106 @@
   z-index: -100;
   object-fit: cover;
 }
-
 .titulo-pagina {
   /* Crea el cuadro inicial */ 
   padding: 20px;
   display: flex; /* Para que el cuadro se ajuste al texto */
   color: #ffff;
   justify-content: center;
-
+  background-color: black;
   /* Llama a la animación */
-  animation: cambioColor 1s infinite; 
+  /*animation: cambioColor 1s infinite;*/ 
 }
-
 /* Define la secuencia de colores */
 @keyframes cambioColor {
-  0%   { background-color: rgb(251, 255, 0); }
-  25%  { background-color: blue; }
-  50%  { background-color: rgb(0, 255, 0); }
-  75%  { background-color: rgb(204, 0, 255); }
-  100% { background-color: red; }
+  0%   { color: rgb(251, 255, 0); }
+  25%  { color: blue; }
+  50%  { color: rgb(0, 255, 0); }
+  75%  { color: rgb(204, 0, 255); }
+  100% { color: red; }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  display: flex;
+  justify-content: center;
+  max-width: 20%;
+}
+.subtitulo {
+  /* Crea el cuadro inicial */ 
+  font-family: 'Exo 2', sans-serif;
+  padding: 20px;
+  display: flex; /* Para que el cuadro se ajuste al texto */
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  justify-content: center;
+}
+.marca{
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.wave svg{
+  display:block;
+  width:100%;
+}
+.descripcion{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.texto-descripcion{
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: #222;
+}
+.miembros{
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.titulo-miembros{
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.contenedor-miembros{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.miembro{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.miembro:hover{
+  transform: translateY(-10px);
+}
+
+.miembro img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.miembro h3{
+  margin: 10px 0;
+}
+
+.miembro p{
+  color: #666;
 }
