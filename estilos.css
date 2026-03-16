@@ -1,19 +1,17 @@
 /* estilos.css */
 .contenido{
   background: white;
-  padding: 80px;
+  padding: 80px 10%;
   min-height: 100vh;
 }
 #video-fondo {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
   object-fit: cover;
+  z-index:-1;
 }
 .titulo-pagina {
   /* Crea el cuadro inicial */ 
@@ -40,7 +38,9 @@
 .logo img {
   display: flex;
   justify-content: center;
-  max-width: 20%;
+  max-width: 250px;
+  width: 60%;
+  height: auto;
 }
 .subtitulo {
   /* Crea el cuadro inicial */ 
@@ -68,7 +68,7 @@
 }
 .texto-descripcion{
   max-width: 900px;
-  font-size: 18px;
+  font-size: clamp(16px, 2vw, 18px);
   line-height: 1.7;
   text-align: center;
   color: #222;
@@ -117,4 +117,36 @@
 
 .miembro p{
   color: #666;
+}
+@media (max-width: 768px){
+
+  .contenido{
+    padding: 40px 20px;
+  }
+
+  .titulo-pagina{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subtitulo{
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .texto-descripcion{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .logo img{
+    width: 70%;
+    max-width: 200px;
+  }
+
+  .miembro img{
+    width: 100px;
+    height: 100px;
+  }
+
 }
